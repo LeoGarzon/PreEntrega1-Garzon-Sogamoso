@@ -10,6 +10,14 @@ class Producto {
             return this.precio - Total 
         }
 
+        for (let i = 1; i <= 10; i++) {
+            if(i == 5){
+                break;
+            }
+            alert(i);
+        }
+        
+
         this.ajustarStock = function (unidadesVendidas) {
             if (typeof unidadesVendidas === "number" && this.stock >= unidadesVendidas && this.stock > 0) {
 
@@ -17,6 +25,9 @@ class Producto {
             } else {
                 console.error("error al descontar unidades", unidadesVendidas) 
             }
+
+          
+            
 
 
         }
